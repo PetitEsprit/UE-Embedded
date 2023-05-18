@@ -17,6 +17,7 @@ signal nbAndb: std_logic;
 
 begin
 	naXora <= INVA xor (A and ENA);
+	nbAndb <= B and ENB;
 	OUT0 <= naXora and nbAndb;
 	OUT1 <= naXora or nbAndb;
 	OUT2 <= not nbAndb;
